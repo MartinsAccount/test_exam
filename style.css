@@ -1,0 +1,118 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #efd592;
+}
+
+.row {
+  height: 100vh;
+  padding: 60px;
+  /* .col-sm {
+        height: calc(100% - 50px);
+    } */
+}
+
+.row .left-content {
+  background-color: #242d38;
+  height: 100%;
+}
+
+.row .right-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 100px 0 60px;
+  color: #242d38;
+}
+
+.row .right-content .btn {
+  border: none;
+  text-transform: uppercase;
+  width: 150px;
+  text-align: start;
+  padding: 0;
+  letter-spacing: 3px;
+  margin-top: 30px;
+  color: #242d38;
+  font-weight: 600;
+}
+
+.row .right-content h1 {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.row .right-content p {
+  line-height: 2.2;
+  font-weight: 300;
+  width: 85%;
+  font-size: 14px;
+}
+
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #242d38;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger .line {
+  width: 40px;
+  height: 7px;
+  background-color: #efd592;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 576px) {
+  .burger {
+    border: 1px solid #efd592;
+  }
+  .row {
+    padding: 0;
+  }
+  .row .left-content {
+    height: 50%;
+  }
+  .row .right-content {
+    padding: 60px 30px;
+  }
+  .row .right-content h1 {
+    font-size: 56px;
+    margin-top: 350px;
+  }
+  .row .right-content p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
